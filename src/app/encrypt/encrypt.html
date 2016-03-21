@@ -1,0 +1,48 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Encrypt a Message</h2>
+      <p>Here you can encrypt a message (e.g. a password).</p>
+      <h2>Step 1</h2>
+      <p>Get the public key from your friend:
+        <br />
+        <br />
+        As he wants to decrypt the message, tell him to go to <a href="/#/decrypt">the decrypt section and copy the public key</a>
+        <br />
+        <br />
+        <br />
+        Paste his public key here:
+      </p>
+
+      <form>
+        <label>
+          <textarea class="form-control" ng-model="encrypt.publickey" cols="50" rows="10"></textarea>
+        </label>
+      </form>
+      <div ng-show="encrypt.publickey.length > 0">
+      <h2>Step 2</h2>
+      <p>Input the message here that you want to send to your friend:</p>
+      <form>
+        <label>
+          <textarea class="form-control" ng-model="encrypt.message" cols="50" rows="10" ng-change="encrypt.encryptIt()"></textarea>
+        </label>
+        <br />
+        <button ng-click="encrypt.encryptIt()" class="btn btn-default btn-primary"><i class="glyphicon glyphicon-lock"></i> Encrypt</button>
+      </form>
+      <h2>Step 3</h2>
+      <p>Below should appear your message - send it to your friend...</p>
+      <form>
+        <label>
+          <textarea class="form-control" select-on-click ng-model="encrypt.encrypted" cols="50" rows="10" readonly="readonly"></textarea>
+        </label>
+      </form>
+    </div>
+    </div>
+  </div>
+
+</div>

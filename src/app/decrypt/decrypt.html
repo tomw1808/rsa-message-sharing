@@ -1,0 +1,38 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Decrypt a Message</h2>
+      <p>Here you can decrypt a message (e.g. a password).</p>
+      <h2>Step 1</h2>
+      <p>Send this to your friend who wants to encrypt the message (its your 2048 bit public key, it is safe to share):
+        <br />
+        <br />
+      </p>
+
+      <form>
+        <label>
+          <textarea class="form-control" ng-model="decrypt.publickey" select-on-click cols="50" rows="10" readonly="readonly"></textarea>
+        </label>
+      </form>
+      <p>DO NOT RELOAD THE PAGE until your friend has sent you the encrypted message. The public key on this page is a one-time use public key only.</p>
+      <h2>Step 2</h2>
+      <p>Input the message here that your friend has encrypted with your public key:</p>
+      <form>
+        <label>
+          <textarea class="form-control" ng-model="decrypt.message" cols="50" rows="10"></textarea>
+        </label>
+        <br />
+        <button ng-click="decrypt.decryptIt()" class="btn btn-default btn-primary"><i class="glyphicon glyphicon-bullhorn"></i> Decrypt</button>
+      </form>
+      <h2>Step 3</h2>
+      <p>Below should appear your message...</p>
+      <p>{{decrypt.decrypted.message}}</p>
+    </div>
+  </div>
+
+</div>

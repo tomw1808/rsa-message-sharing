@@ -1,0 +1,31 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>RSA Public/Private Key Message sharing</h1>
+      <p>To share messages, such as passwords, across the internet is always a bit problematic. As soon as a password is sent over the wire unencrypted it <em>should be considered as compromised.</em> There are various tools out there, for example 1password, which allow password management. But what if you want to share a passwort with a third party?</p>
+      <h2>How it works</h2>
+      <p>You can either encrypt a message with a public key or decrypt a message with a private key.<br />
+      <br />
+      For example You want to send your friend Patrick a password "ABC".
+      <br/>
+        You tell Patrick to go to /#/decrypt and send you <em>his public key</em>.
+      <br />
+      You go to /#/encrypt and put in Patrick's public key and the message you want to encrypt.
+      <br />
+      You send Patrick the encrypted message.
+      <br />
+      Patrick uses /#/decrypt to decrypt the message (with the private key which is created in the background).
+      </p>
+      <h2>Is it safe?</h2>
+      <p>
+        Hopefully safe enough for transmitting it via the internet. It uses the <a href="https://github.com/travist/jsencrypt" target="_blank">JSEncrypt</a> library for generating the keypairs and uses it for encryption/decryption.
+      </p>
+    </div>
+  </div>
+
+</div>
