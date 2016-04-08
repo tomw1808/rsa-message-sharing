@@ -7,7 +7,9 @@ Imagine Bob is in France and Paul is in the USA. Normally you'd have to go throu
 ![rsa-password-share-tutorial](https://raw.githubusercontent.com/tomw1808/rsa-message-sharing/master/src/assets/images/tutorial.gif "Tutorial Gif")
 
 
-# Demo
+# Hosted solution
+
+Open up this link and add it to your bookmarks. Every time you want to share a password (and I know it will happen!) you can just open that tool with your the colleagues and follow the instructions.
 
 http://tomw1808.github.io/rsa-message-sharing/#/
 
