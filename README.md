@@ -9,6 +9,8 @@ Imagine Bob is in France and Paul is in the USA. Normally you'd have to go throu
 
 I had this problem so many times that I finally wrote a solution that works on Mac, Windows, in the Browser, no Server, everywhere. You could even go ahead and make a Phonegap solution out of it.
 
+It is a one-time public key usage. I think the correct expression for it is perfect forward encryption, but I might be wrong.
+
 # Hosted solution
 
 Open up this link and add it to your bookmarks. Every time you want to share a password (and I know it will happen!) you can just open that tool with your the colleagues and follow the instructions.
