@@ -7,13 +7,15 @@ Imagine Bob is in France and Paul is in the USA. Normally you'd have to go throu
 ![rsa-password-share-tutorial](https://raw.githubusercontent.com/tomw1808/rsa-message-sharing/master/src/assets/images/tutorial.gif "Tutorial Gif")
 
 
+I had this problem so many times that I finally wrote a solution that works on Mac, Windows, in the Browser, no Server, everywhere. You could even go ahead and make a Phonegap solution out of it.
+
 # Hosted solution
 
 Open up this link and add it to your bookmarks. Every time you want to share a password (and I know it will happen!) you can just open that tool with your the colleagues and follow the instructions.
 
 http://tomw1808.github.io/rsa-message-sharing/#/
 
-# Install
+# Download and Develop yourself
 
     git clone git@github.com:tomw1808/rsa-message-sharing.git
     npm install
