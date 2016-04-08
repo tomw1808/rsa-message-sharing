@@ -8,8 +8,8 @@
     /** @ngInject */
     function DecryptController() {
         var vm = this;
-        vm.decrypted = { message: "asdf"};
-        var crypt = new JSEncrypt({default_key_size: 1024});
+        vm.decrypted = { message: ""};
+        var crypt = new JSEncrypt({default_key_size: 2048});
         crypt.getKey();
         vm.privatekey = crypt.getPrivateKey();
         vm.publickey = crypt.getPublicKey();

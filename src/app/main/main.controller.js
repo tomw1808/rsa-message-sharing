@@ -8,6 +8,6 @@
   /** @ngInject */
   function MainController() {
     var vm = this;
-    vm.bla = "blabbb";
+    vm.bla = "Password";
   }
 })();

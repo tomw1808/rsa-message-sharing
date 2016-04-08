@@ -2,6 +2,11 @@
 
 Because sharing a password should never happen in plain-text.
 
+Imagine Bob is in France and Paul is in the USA. Normally you'd have to go through a tedious load of tools to securely share a password. You definitely don't want to send it via skype, Email or any other text-message. Are you going to call? Maybe for a password that is called: "AGdfds$%$%sdfdfs$$gsddf___gffgfg323"? There is a better way...
+
+![rsa-password-share-tutorial](https://raw.githubusercontent.com/tomw1808/rsa-message-sharing/master/src/assets/images/tutorial.gif "Tutorial Gif")
+
+
 # Demo
 
 http://tomw1808.github.io/rsa-message-sharing/#/
